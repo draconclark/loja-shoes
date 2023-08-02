@@ -1,0 +1,189 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+.principal{
+   display: block;
+   background-color: #E0FFFF;
+   margin: 24px 24px;
+}
+
+header{
+   display: flex;
+   padding: 16px 0;
+   background-color: #3800d13f;
+   color:#00000050 ;
+}
+
+header nav li{
+   display: inline;
+   margin-left: 16px;
+   font-size: 18px;
+}
+
+header nav li a{
+   color:#8B008B;
+   text-decoration: none;
+}
+
+ h1{
+   text-decoration: underline overline;
+   font-size: 48px;
+ }
+
+ h2{
+   color: #8B008B;
+   font-size: 36px;
+   margin-left: 24px;
+ }
+
+ h3{
+   text-align: center;
+   font-style: italic;
+   color: #8B008B;
+   font-size: 20px;
+ }
+
+p{
+   color: #8B008B;
+   margin-left: 24px;
+}
+
+header .container, 
+section .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}  
+ 
+.container{
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+}
+ 
+section{
+   padding: 24px 0;
+}
+
+section h2{
+   margin-bottom: 16px;
+}
+
+section{
+    color: #182C61;
+}
+
+section p{
+   margin-bottom: 8px;
+} 
+
+.row {
+   margin: 24px 24px;
+   display: flex;
+   justify-content: space-between;
+}
+  
+.col {
+   width: 300px;  
+   height: 400px;  
+   perspective: 800px;  
+   flex-basis: 24%;
+   background-color: #8B008B;
+   padding: 10px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.col img {
+   max-width: 100%;
+   max-height: 100%;
+   display: block;
+   margin: 0 auto;
+}
+
+.card {
+   background-color: #00CED1;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform-style: preserve-3d;
+   transition: transform 0.6s ease;
+}
+ 
+.conteudo {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border: 1px solid #ccc;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.frente {
+   transform: rotateY(0deg);
+}
+
+.frente footer{
+   font-size: 24px;
+   text-align: center;
+   margin-bottom: 16px;
+   font-style: italic;
+   color: #8B008B;
+   font-weight: 900;
+}
+ 
+.verso {
+   background-color:  #00CED1;
+   transform: rotateY(180deg);
+}
+.verso h3{
+   font-size: 24px;
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+.verso footer{
+   font-size: 24px;
+   text-align: center;
+   margin-bottom: 16px;
+   font-style: italic;
+   color: #8B008B;
+   font-weight: 900;
+   text-decoration: underline;
+}
+
+.verso button{
+   max-width: 80%;
+   width: 100%;
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #8B008B;
+   color: #00CED1;
+   font-size: 18px;
+   font-style: italic;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.verso p{
+   justify-content: center;
+}
+
+.col:hover .card {
+   transform: rotateY(180deg);
+}
+
+.rodape{
+   background-color: #00CED1;
+   color: #8B008B;
+   text-align: center;
+}
